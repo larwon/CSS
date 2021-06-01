@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--id는 #으로 받음-->
+    <!--class는 .으로 받음-->
+    <!--group은 적용할 선택자를 ,로 구분 후 적용-->
+    <!--내부 스타일 시트로 적용-->
+    <style>
+        p {
+            color: red;
+            text-decoration: underline;
+        }
+
+        #demoId {
+            color: blue;
+            text-decoration: line-through;
+        }
+
+        .demoClass {
+            color: green;
+            text-decoration: line-through;
+        }
+
+        p, #demoId, .demoClass {
+            background-color: burlywood;
+        }
+        /* 아시겠어요??
+        p, #demoId, .demoClass {
+            background-color: burlywood;
+        }
+        */
+    </style>
+    <!--외부 스타일 시트로 적용-->
+    <link rel="stylesheet" href="/examples/media/expand_style.css">
+</head>
+<body>
+    <p>CSS 연습해보자</p>
+
+    <p id="demoId">CSS 아이디</p>
+
+    <p class="demoClass">CSS 클래스</p>
+
+    CSS 주석 처리는 /* */로 합니다
+    
+	<h2 style="color:green;text-decoration:underline">
+		인라인 스타일을 이용하여 스타일을 적용하였습니다.
+	</h2>
+
+    스타일 적용의 우선순위<br>
+    1. 인라인 스타일<br> 2. 내부/외부 스타일<br> 3. 웹 브라우저 기본 스타일
+
+</body>
+</html>
